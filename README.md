@@ -22,7 +22,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Setup Domain Controller
 - Setup Client
 - Ping
-- 
+- Create Users
+- Admin Acesss
 
 <h2>Deployment and Configuration Steps</h2>
 
