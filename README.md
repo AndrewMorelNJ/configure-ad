@@ -32,9 +32,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-Setup Domain Controller in Azure by first creating a Resource Group. 
-  
-Name the group "Active-Directory-Lab".
+Setup Domain Controller in Azure Portal by creating a Resource Group & Naming it "Active-Directory-Lab".
 </p>
 
 <p>
@@ -54,9 +52,9 @@ Make sure it uses "Active-Direcory-Lab" as the Resource Group.
 <p>
 Create the Domain Controller VM (Windows Server 2022: Hotpatch) named “DC-1”.
 
-Make sure your size has at least "2 vCPUs & 8 GiB memory".
+Ensure your size has at least "2 vCPUs & 8 GiB memory" before creation.
 
-(User: labuser / Password: Password1!)
+Use the following for login (User: labuser / Password: Password1!)
 </p>
 
 <p>
@@ -66,7 +64,7 @@ Make sure your size has at least "2 vCPUs & 8 GiB memory".
 <p>
 Create the Client VM (Windows 10) named “Client-1”.
 
-Make sure your size has at least "2 vCPUs & 8 GiB memory".
+Ensure your size has at least "2 vCPUs & 8 GiB memory".
 
 (User: labuser / Password: Password1!)
 </p>
@@ -120,7 +118,9 @@ Proceed to type "wf.msc" and click "OK".
 <p>
 Now disable the Windows Firewall (for testing connectivity).
   
-Make sure all Firewall states are turned OFF.
+Ensure all Firewall states are turned OFF (Domain, Private, Public).
+
+This would not be normal outside of this lab / in a real life work enviroment.
 </p>
 
 <p>
@@ -143,7 +143,7 @@ From the Azure Portal, restart Client-1.
 </p>
 
 <p>
-Login to Client-1 with Remote Desktop.
+Login to Client-1 with Remote Desktop Connection.
 </p>
 
 <p>
@@ -189,7 +189,7 @@ Go to 'Active Directory Domain Services", add features, and install.
 </p>
 
 <p>
-Next go to Server Manager to Promote as a DC (click on yellow !): 
+Next go to Server Manager to Promote as a DC (click on yellow "!").
 </p>
 
 <p>
@@ -199,7 +199,7 @@ Next go to Server Manager to Promote as a DC (click on yellow !):
 <p> 
 Setup a new forest as mydomain.com (can be anything, just remember what it is).
   
-You can use any password and user for the forest setup.
+You can use any password and user for the forest setup. Ex: (User: labuser / Password: Password1!)
 </p>
 
 <p>
