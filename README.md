@@ -335,7 +335,7 @@ Run the script and observe the accounts being created.
 </p>
 
 <p>
-When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES).
+When finished, open ADUC and observe the accounts in the appropriate OU (_EMPLOYEES).
   
 Attempt to log into Client-1 with one of the accounts (take note of the password in the script).
 </p>
